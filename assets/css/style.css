@@ -1,0 +1,67 @@
+:root {
+    --dark-grey:#333237;
+    --tan: #E0C8A5;
+    --sage:#A9B0AB;
+    --yellow: #D8C9A5;
+    --blue: #B9D2E0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color:var(--dark-grey);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* HEADER / NAVBAR STYLES START */
+header {
+    padding: 20px 35px;
+    background-color: var(--sage);
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--dark-grey);
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+    background-color: var(--tan);
+    color: var(--dark-grey);
+    border-radius: 15px;
+}
