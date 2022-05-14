@@ -13,14 +13,14 @@
 }
 
 body {
-    color:var(--dark-grey);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    background-color: var(--sage);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* HEADER / NAVBAR STYLES START */
 header {
     padding: 20px 35px;
-    background-color: var(--sage);
+    background-color: var(--yellow);
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -65,3 +65,63 @@ header nav ul li a:hover {
     color: var(--dark-grey);
     border-radius: 15px;
 }
+
+/* FOOTER STYLES START - do i need? */
+
+/* HERO STYLES START */
+.hero {
+    background-image: url("../images/210.jpg");/*fill with image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    padding: 100px;
+}
+
+.hero-cta {
+    width: 30%;
+    text-align: center;
+    margin: 3.5%;
+    color: var(--tan);
+    font-size: 20px;
+    line-height: 1.2;
+    background-color: rgb(51,50,55, 0.8);
+}
+
+/* SECTION TITLE STYLES START */
+.section-title {
+    font-size: 30px;
+    border-right: 3px solid;
+    color: var(--blue);
+    text-align: center;
+}
+
+.primary-border {
+    border-right: 5px solid;
+    color: var(--blue);
+    padding: 5px
+}
+
+.intro img {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.intro p {
+    flex-wrap: wrap;
+    padding: 5px;
+    text-align: center;
+}
+
+/* UTILITIES */
+.flex-row {
+    display: flex;
+}
+/* END UTILITIES */
