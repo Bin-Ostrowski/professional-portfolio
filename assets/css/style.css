@@ -14,7 +14,7 @@
 
 body {
     background-color: var(--sage);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 /* HEADER / NAVBAR STYLES START */
@@ -57,7 +57,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 2vw;
 }
 
 header nav ul li a:hover {
@@ -93,31 +93,46 @@ header nav ul li a:hover {
 }
 
 /* SECTION TITLE STYLES START */
+
 .section-title {
     font-size: 30px;
-    border-right: 3px solid;
-    color: var(--blue);
+    color: var(--dark-grey);
     text-align: center;
+    padding: 20px 30px 50px 0;
 }
 
 .primary-border {
     border-right: 5px solid;
-    color: var(--blue);
-    padding: 5px
+    border-color: var(--blue);
+    margin: 0 0 20px;
 }
 
-.intro img {
-    display: flex;
-    justify-content: center;
-    width: 25%;
+.about-me {
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 20px 30px 20px 30px;
 }
 
-.intro p {
+.about-me-content {
     flex-wrap: wrap;
-    padding: 5px;
+    align-items: center;
+    flex: 1 15%;
+}
+
+.about-me img {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    flex: 1 5%;
+    padding: 0 20px 20px;
+}
+
+.about-me p {
+    flex-wrap: wrap;
+    padding: 20px 20px 0;
     text-align: center;
+    color: var(--dark-grey);
+    flex: 15%;
 }
 
 /* UTILITIES */
