@@ -92,10 +92,9 @@ header nav ul li a:hover {
     background-color: rgb(51,50,55, 0.8);
 }
 
-/* SECTION TITLE STYLES START */
-
+/* ABOUT ME START */
 .section-title {
-    font-size: 30px;
+    font-size: 3vw;
     color: var(--dark-grey);
     text-align: center;
     padding: 20px 30px 50px 0;
@@ -108,7 +107,6 @@ header nav ul li a:hover {
 }
 
 .about-me {
-    justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px 30px 20px 30px;
 }
@@ -134,6 +132,56 @@ header nav ul li a:hover {
     color: var(--dark-grey);
     flex: 15%;
 }
+/* END ABOUT ME */
+
+/* WEB STARTS */
+
+.web-projects a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+/* END WEB */
+
+/* CONTACT ME START */
+.contact {
+    flex-wrap: wrap;
+    padding: 20px 30px 20px 30px;
+}
+
+.contact-info {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--dark-grey);
+    font-size: 1.7vw;
+    flex: 1;
+    padding: 0 0 0 20px;
+}
+
+.contact ul {
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+
+.contact li {
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.contact-info li:hover {
+    background-color: var(--tan);
+    color: var(--dark-grey);
+    border-radius: 15px;
+}
+/* CONTACT ME END */
 
 /* UTILITIES */
 .flex-row {
