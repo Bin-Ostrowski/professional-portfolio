@@ -131,17 +131,58 @@ header nav ul li a:hover {
     text-align: center;
     color: var(--dark-grey);
     flex: 15%;
+    font-size: 1.3vw;
 }
 /* END ABOUT ME */
 
 /* WEB STARTS */
+.projects {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.run-buddy {
+    background-image: url("../images/run-buddy-img.jpg");/*fill with image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 100px;
+}
 
 .web-projects a {
     text-decoration: none;
     color: var(--grey);
 }
 
+
 /* END WEB */
+
+
+
+/* RESUME START */
+.resume-current {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 30px 20px 30px;
+}
+
+.resume-current h2 {
+    flex-wrap: wrap;
+}
+
+.resume-current p {
+    flex-wrap: wrap;
+    padding: 20px 20px 0;
+    color: var(--dark-grey);
+    font-size: 1.3vw;
+}
+/* RESUME END */
+
+
 
 /* CONTACT ME START */
 .contact {
