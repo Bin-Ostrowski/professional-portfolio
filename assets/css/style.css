@@ -94,12 +94,14 @@ header nav ul li a:hover {
     background-color: rgb(51,50,55, 0.8);
 }
 
-/* ABOUT ME START */
+/* SECTION TITLE STYLES START */
 .section-title {
-    font-size: 3vw;
+    font-size: 20px;
     color: var(--dark-grey);
-    text-align: center;
-    padding: 20px 30px 50px 0;
+    padding: 20px 20px 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 15%;
 }
 
 .primary-border {
@@ -108,12 +110,18 @@ header nav ul li a:hover {
     margin: 0 0 20px;
 }
 
-.about-me {
-    flex-wrap: wrap;
+.section-content {
     padding: 20px 30px 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+/* SECTION TITLE STYLES END */
+
+/* ABOUT ME START */
+
 .about-me-content {
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     flex: 1 15%;
@@ -140,11 +148,13 @@ header nav ul li a:hover {
 /* WEB STARTS */
 
 .web-projects {
+    display: flex;
     flex-wrap: wrap;
     padding: 20px 30px 20px 30px;
 }
 
 .projects {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     flex: 1 1;
@@ -158,17 +168,21 @@ header nav ul li a:hover {
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    align-items: flex-start;
-    padding: 100px;
+    padding-top: 200px;
+    padding-left: 10px;
+    opacity: 60%;
+}
+
+.main-project:hover {
+    opacity: 100%;
 }
 
 .sub-projects {
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 0;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px 0;
 }
 
@@ -177,10 +191,15 @@ header nav ul li a:hover {
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
+    flex: 40%;
     flex-wrap: wrap;
-    align-items: flex-start;
-    padding: 100px;
+    opacity: 60%;
+    padding-top: 100px;
+    padding-left: 10px;
+}
+
+.project-two:hover {
+    opacity: 100%;
 }
 
 .project-three {
@@ -188,10 +207,15 @@ header nav ul li a:hover {
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
+    flex: 40%;
     flex-wrap: wrap;
-    align-items: flex-start;
-    padding: 100px;
+    padding-top: 100px;
+    padding-left: 10px;
+    opacity: 60%;
+}
+
+.project-three:hover {
+    opacity: 100%;
 }
 
 .web-projects a {
@@ -203,46 +227,38 @@ header nav ul li a:hover {
     background-color: var(--yellow);
     text-align: center;
     padding: 5px;
-    border-radius: 15px;
-    margin: 0;
 }
-
 
 /* END WEB */
 
-
-
 /* RESUME START */
-.resume-current {
+.resume-content {
+    display: flex;
     flex-wrap: wrap;
-    padding: 20px 30px 20px 30px;
-}
-
-.resume-current p {
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 20px 20px 0;
+    align-items:center;
+    padding: 0 20px 0;
     color: var(--dark-grey);
     font-size: 16px;
+    flex: 30%
 }
 /* RESUME END */
 
-
-
 /* CONTACT ME START */
 .contact {
+    display: flex;
     flex-wrap: wrap;
     padding: 20px 30px 20px 30px;
 }
 
 .contact-info {
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     color: var(--dark-grey);
     font-size: 1.7vw;
     flex: 1;
-    padding: 0 0 0 20px;
+    padding-left: 20px;
 }
 
 .contact ul {
@@ -274,6 +290,8 @@ header nav ul li a:hover {
     display: flex;
 }
 /* END UTILITIES */
+
+/* MEDIA QUERY FOR SMALLER DESKTO SCREENS AND SMALLER */
 
 
 /* add to smaller screen size for sub-projects 
