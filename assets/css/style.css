@@ -10,7 +10,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    letter-spacing: .02em;
 }
+
+
 
 body {
     background-color: var(--sage);
@@ -45,7 +48,7 @@ header a {
 }
 
 header nav {
-    margin: 7px 0;
+    margin: 15px 0;
 }
 
 header nav ul {
@@ -57,13 +60,13 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 10px 15px;
+    padding: 10px 10px;
     font-weight: lighter;
     font-size: 2vw;
 }
 
 header nav ul li a:hover {
-    background-color: var(--tan);
+    background-color: var(--sage);
     color: var(--dark-grey);
     border-radius: 15px;
 }
@@ -72,7 +75,7 @@ header nav ul li a:hover {
 
 /* HERO STYLES START */
 .hero {
-    background-image: url("../images/210.jpg");/*fill with image */
+    background-image: url("../images/sand.jpg");/*fill with image */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -246,6 +249,13 @@ header nav ul li a:hover {
     font-size: 16px;
     flex: 30%
 }
+
+.resume-content p {
+    text-align: left;
+    color: var(--dark-grey);
+    flex: 15%;
+    font-size: 20px;
+}
 /* RESUME END */
 
 /* CONTACT ME START */
@@ -334,7 +344,6 @@ header nav ul li a:hover {
         flex: 50%;
     }
 
-
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -363,6 +372,10 @@ header nav ul li a:hover {
     }
 
     .about-me-content p {
+        font-size: 16px;
+    }
+
+    .resume-content p {
         font-size: 16px;
     }
 
