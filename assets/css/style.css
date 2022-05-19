@@ -13,8 +13,6 @@
     letter-spacing: .02em;
 }
 
-
-
 body {
     background-color: var(--sage);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
@@ -27,12 +25,6 @@ header {
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* add to freeze header 
-    position: sticky;
-    top: 0;
-    position: -webkit-sticky;
-    z-index: 9999;
-    */
 }
 
 header h1 {
@@ -70,8 +62,7 @@ header nav ul li a:hover {
     color: var(--dark-grey);
     border-radius: 15px;
 }
-
-/* FOOTER STYLES START - do i need? */
+/* END HEADER */
 
 /* HERO STYLES START */
 .hero {
@@ -86,13 +77,14 @@ header nav ul li a:hover {
     padding: 250px 20px 20px 20px;
 }
 
-.hero-cta {
+.hero-quote {
     text-align: center;
     color: var(--tan);
     font-size: 20px;
     padding: 10px;
-    background-color: rgb(51,50,55, 0.8);
+    background-color: rgb(51,50,55, 0.6);
 }
+/* END HERO */
 
 /* SECTION TITLE STYLES START */
 .section-title {
@@ -168,7 +160,7 @@ header nav ul li a:hover {
 .main-project {
     flex-wrap: wrap;
     flex: 100%;
-    background-image: url("../images/run-buddy-img.jpg");/*fill with image */
+    background-image: url("../images/run-buddy-img.jpg");
     background-size: cover;
     background-position: top;
     display: flex;
@@ -176,22 +168,16 @@ header nav ul li a:hover {
     padding-top: 200px;
     padding-left: 10px;
     opacity: 60%;
-}
-
-.main-project:hover {
-    opacity: 100%;
+    border: 7px solid var(--yellow);
 }
 
 .sub-projects {
     display: flex;
     flex-wrap: wrap;
     flex: 100%;
-    justify-content: space-between;
-    
 }
 
-.project-two {
-    background-image: url("../images/pexels.jpg");/*fill with image */
+.project-two, .project-three {
     background-size: cover;
     background-position: center;
     display: flex;
@@ -200,30 +186,16 @@ header nav ul li a:hover {
     opacity: 60%;
     padding-top: 100px;
     padding-left: 10px;
-    justify-content: space-between;
     margin: 20px;
+    border: 7px solid var(--yellow);
 }
 
-.project-two:hover {
-    opacity: 100%;
+.project-two {
+    background-image: url("../images/pexels.jpg");/*fill with image */ 
 }
 
 .project-three {
     background-image: url("../images/blossoms.jpg");/*fill with image */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex: 40%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 100px;
-    padding-left: 10px;
-    opacity: 60%;
-    margin: 20px;
-}
-
-.project-three:hover {
-    opacity: 100%;
 }
 
 .web-projects a {
@@ -234,7 +206,11 @@ header nav ul li a:hover {
 .project-text {
     background-color: var(--yellow);
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+}
+
+.main-project:hover, .project-two:hover, .project-three:hover {
+    opacity: 100%;
 }
 
 /* END WEB */
@@ -299,12 +275,6 @@ header nav ul li a:hover {
 }
 /* CONTACT ME END */
 
-/* UTILITIES */
-.flex-row {
-    display: flex;
-}
-/* END UTILITIES */
-
 /* MEDIA QUERY FOR SMALLER DESKTO SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     header { 
@@ -328,7 +298,7 @@ header nav ul li a:hover {
         font-size: 20px;
     }
     
-    .hero-cta {
+    .hero-quote {
         text-align: center;
     }
 
@@ -362,7 +332,7 @@ header nav ul li a:hover {
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
     
-    .hero-cta {
+    .hero-quote {
         font-size: 16px;
     }
     
