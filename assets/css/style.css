@@ -191,11 +191,15 @@ header nav ul li a:hover {
 }
 
 .project-two {
-    background-image: url("../images/pexels.jpg");/*fill with image */ 
+    background-image: url("../images/pexels.jpg");/*fill with screenshot */ 
+    background-size: cover;
+    background-position: top;
 }
 
 .project-three {
-    background-image: url("../images/blossoms.jpg");/*fill with image */
+    background-image: url("../images/blossoms.jpg");
+    background-size: cover;
+    background-position: top;
 }
 
 .web-projects a {
@@ -208,6 +212,10 @@ header nav ul li a:hover {
     text-align: center;
     padding: 10px;
 }
+
+.tools-used{
+    word-spacing: 5px;
+} 
 
 .main-project:hover, .project-two:hover, .project-three:hover {
     opacity: 100%;
