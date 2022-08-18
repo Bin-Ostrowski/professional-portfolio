@@ -175,6 +175,7 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     flex: 100%;
+    
 }
 
 .project-two, .project-three {
@@ -191,13 +192,13 @@ header nav ul li a:hover {
 }
 
 .project-two {
-    background-image: url("../images/rhythm-in-region.jpeg");/*fill with screenshot */ 
+    background-image: url("../images/rhythm-in-region.jpeg");
     background-size: cover;
     background-position: top;
 }
 
 .project-three {
-    background-image: url("../images/blossoms.jpg");
+    background-image: url("../images/dose.png");
     background-size: cover;
     background-position: top;
 }
